@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+</head>
+<body class="text-black">
+  <div class="body-section">
+    <div class="orbit hidden lg:block orbit1">
+      <div class="orbit orbit2"></div>
+      <div class="orbit orbit3"></div>
+      <div class="planet-parent">
+        <div class="planet green-planet"></div>
+        <div class="planet blue-planet"></div>
+        <div class="planet red-planet"></div>
+      </div>
+    </div>
+      <div class="green-clip"></div>
+      <div class="red-clip bg-pr-sec"></div>
+    <header id="header" class="ivisible sticky bg-pr-milk bg-opacity-90 w-full flex items-center top-0 left-0 z-50 h-20 text-lg text-pr-nav">
+      <div class="flex items-center justify-between w-11/12 mx-auto">
+        <div class="brand-logo w-12">
+          <img src="/assets/icons/paritie-logo.png" alt="">
+        </div> 
+        <ul class="nav-tabs hidden md:flex items-center justify-between">
+          <a href="index.html" class="active relative mr-5">Home</a>
+            <p class="big-num absolute -top-5 -right-5"></p>
+          <a href="services.html" class="mr-5">Services</a>
+          <a href="services.html">Projects</a>
+        </ul>
+  
+        <div class="nav-links items-center justify-between hidden md:flex ">
+          <span class="mr-10">Innovation Hub</span>
+          <span class="mr-10">Coworking Space</span>
+          <a href="#" class="text-pr-sec border border-pr-sec rounded-lg bg-transparent outline-none text-sm py-3 px-5">Start a Project</a>
+        </div>
+        <div class="sm-menu-btn relative z-50 justify-self-end flex flex-col sm:hidden">
+          <span class="ham-up inline-flex w-5 h-1 bg-pr-pri"></span>
+          <span class="ham-down inline-flex w-5 h-1 bg-pr-pri mt-1"></span> 
+        </div>  
+        <div class="sm-screen-menu fixed top-0 left-0 h-screen w-screen lg:w-full bg-pr-pri hidden">  
+          <div class="flex flex-col p-5 mt-10">
+            <a href="index.html" class="text-white text-3xl mb-3 p-2">Home</a> 
+            <a href="services.html" class="text-white text-3xl mb-3 p-2">Services 
+            </a>
+            <a href="projects.html" class="text-white text-3xl mb-3 p-2">Projects</a>
+            <a href="careers.html" class="text-white text-3xl mb-3 p-2">Careers</a>
+            <a href="" class="text-mg-pri text-2xl font-semibold">+234 9034568534</a> 
+          </div>
+        </div>  
+      
+      </div>
+    </header>
+    <section class="bg-pr-milk flex flex-col justify-between w-full pb-20 overflow-x-hidden">
+      <div class="md:ml-20 mt-20 w-11/12 mx-auto md:w-full z-30">
+        <div class="transParent pointer relative lg:w-7/12 xl:w-5/12">
+          <h1 class="transHeader font-bold cursor-pointer text-5xl md:text-6xl flex flex-col leading-snug mb-10 text-white">
+            <span>Branding.</span>
+            <span>Product Design.</span>
+            <span">Advertising.</span>
+          </h1>
+          <h1 class="transHeader absolute top-0 left-0 cloneHeader font-bold text-5xl md:text-6xl flex flex-col leading-snug mb-10 text-pr-pri">
+            <span>Branding.</span>
+            <span>Product Design.</span>
+            <span>Advertising.</span>
+          </h1>
+        </div>
+        
+        <a href="#featured" class="text-white border bg-pr-sec rounded-lg bg-transparent text-xl py-4 px-7">Featured Work</a>
+      </div>
+      <div class="shapes pb-10 mt-20 md:mt-0 md:absolute right-0 overflow-hidden w-full z-10">
+        <div class="shapedaddy relative w-full h-full">
+          <div class="shape1 absolute top-0 right-0 bg-white rounded-3xl mt-5 z-10"></div>
+          <div class="shape2 absolute top-0 right-0 bg-white rounded-l-3xl z-10"></div>
+          <div class="shape3 absolute top-20 right-0 bg-white rounded-l-3xl"></div>
+          <div class="shape4 absolute right-44 bg-white rounded-3xl origin-center"></div>
+          <div class="shape5 absolute right-96 bg-white rounded-3xl origin-center z-10"></div>
+        </div>
+      </div>
+      <div class="md:ml-20 md:mt-48 xl:mt-52 w-11/12 md:w-full mx-auto">
+        <div class="w-full">
+          <h3 class="uppercase text-2xl font-bold">Featured Clients</h3>
+          <div class="clients flex flex-col md:flex-row justify-between md:w-1/2">
+            <div class="divide flex justify-between">
+              <ul class="clients flex flex-col font-medium flex-wrap text-xl mt-10">
+                <li class="w-40 h-12 ">Bilkebab</li>
+                <li class="w-40 h-12">Ovgile</li>
+              </ul>
+              <ul class="clients flex flex-col font-medium flex-wrap text-xl mt-10">
+                <li class="w-40 h-12 ">Teamland</li>
+                <li class="w-40 h-12">Cabsol</li>
+              </ul>
+            </div>
+            <ul class="clients flex flex-col font-medium flex-wrap text-xl md:mt-10">
+              <li class="w-72 h-12 ">Brains and Hammers Green</li>
+              <li class="w-40 h-12">Vest Money</li>
+            </ul>
+          </div>
+      </div>
+    </section>
+    <section id="featured" class="bg-white w-full py-20">
+      <div class="w-11/12 mx-auto">
+        <div class="featured flex flex-wrap md:flex-nowrap items-center">
+          <h4 class="text-2xl md:text-xl uppercase font-bold md:font-semibold mr-3 md:mr-8">Featured Work</h4>
+          <hr class="dotted">
+          <p class="md:ml-8 mt-5 md:mt-0 font-normal text-xl md:text-2xl md:w-5/12">At the heart of every project we work on is creativity and the urge to solve real problems. Explore some of our recent projects.</p>
+        </div>
+        <div class="mx-auto mt-20 w-10/12">
+          <div class="flex flex-col items-centerw-full h-full">
+          <img class="mb-16" src="./assets/images/bright-book.png" alt="Enjoy brighter banking">
+          <img class="mb-16" src="./assets/images/bright-book.png" alt="Enjoy brighter banking">
+          <img class="mb-16" src="./assets/images/bright-book.png" alt="Enjoy brighter banking">
+          <img src="./assets/images/bright-book.png" alt="Enjoy brighter banking">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-pr-gray py-20 w-full">
+      <div class="w-11/12 mx-auto">
+        <div class="featured flex flex-wrap md:flex-nowrap items-center">
+          <h4 class="text-2xl md:text-xl uppercase font-bold md:font-semibold mr-3 md:mr-8">What We Do</h4>
+          <hr class="dotted">
+          <p class="md:ml-8 mt-5 md:mt-0 font-normal text-xl md:text-2xl md:w-5/12">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+        </div>
+        <div class="what-cards flex justify-between flex-wrap items-start overflow-hidden mt-20 mx-auto md:w-full xl:w-11/12">
+          <div class="card-type card1 rounded-2xl relative pt-12 pb-20 w-80 md:w-72 xl:w-80 mb-20">
+            <p class="big-num num-1 absolute font-bold text-pr-gray -right-5">1</p>
+            <div class="card-content w-3/4 mx-auto">
+              <div class="card-circle1 w-20 h-20 rounded-full"></div>
+              <h3 class="font-bold my-10 text-3xl text-black">Branding and Logo Design</h3>
+              <p class="text-lg">Leveraging on our capabilities and experience, we are abl.</p>
+            </div>
+          </div>
+          <div class="card-type bg-white rounded-2xl relative pt-8 w-80 md:w-72 xl:w-80 mb-20">
+            <p class="big-num num-2 absolute font-bold text-pr-gray -right-16">2</p>
+            <div class="card-content w-3/4 mx-auto">
+              <div class="card-circle2 w-20 h-20 rounded-full"></div>
+              <h3 class="font-bold mt-8 mb-16 md:mb-8 xl:mb-16 text-3xl text-black">User Interface and Experience Design</h3>
+              <div class="h-32 rounded-t-2xl w-full bg-blue-700"></div>
+            </div>
+          </div>
+          <div class="card-type bg-gradient-to-br from-blue-600 to-blue-300 pt-8 pb-16 text-white rounded-2xl relative w-80 md:w-72 xl:w-80 mb-20">
+            <p class="big-num num-3 absolute font-bold text-pr-gray">3</p>
+            <div class="card-content w-3/4 mx-auto">
+              <div class="bg-blue-600 w-20 h-20 rounded-full"></div>
+              <h3 class="font-bold my-10 text-3xl">Website and Mobile App Development</h3>
+              <p class="text-lg">Leveraging on our capabilities and experience, we are abl.</p>
+            </div>
+          </div>
+          <div class="card-type card1 rounded-2xl relative pt-12 pb-20 w-80 md:w-72 xl:w-80 mb-20">
+            <p class="big-num num-1 absolute font-bold text-pr-gray -right-5">1</p>
+            <div class="card-content w-3/4 mx-auto">
+              <div class="card-circle1 w-20 h-20 rounded-full"></div>
+              <h3 class="font-bold my-10 text-3xl text-black">Branding and Logo Design</h3>
+              <p class="text-lg">Leveraging on our capabilities and experience, we are abl.</p>
+            </div>
+          </div>
+          <div class="card-type bg-white rounded-2xl relative pt-8 w-80 md:w-72 xl:w-80 mb-20">
+            <p class="big-num num-2 absolute font-bold text-pr-gray -right-16">2</p>
+            <div class="card-content w-3/4 mx-auto">
+              <div class="card-circle2 w-20 h-20 rounded-full"></div>
+              <h3 class="font-bold mt-8 mb-16 md:mb-8 xl:mb-16 text-3xl text-black">User Interface and Experience Design</h3>
+              <div class="h-32 rounded-t-2xl w-full bg-blue-700"></div>
+            </div>
+          </div>
+          <div class="card-type bg-gradient-to-br from-blue-600 to-blue-300 pt-8 pb-16 text-white rounded-2xl relative w-80 md:w-72 xl:w-80 mb-20">
+            <p class="big-num num-3 absolute font-bold text-pr-gray">3</p>
+            <div class="card-content w-3/4 mx-auto">
+              <div class="bg-blue-600 w-20 h-20 rounded-full"></div>
+              <h3 class="font-bold my-10 text-3xl">Website and Mobile App Development</h3>
+              <p class="text-lg">Leveraging on our capabilities and experience, we are abl.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white w-full py-20">
+      <div class="w-11/12 mx-auto">
+        <div class="featured flex flex-wrap md:flex-nowrap">
+          <div class="feat-desc flex flex-col h-24 justify-between mr-5 md:mr-12">
+            <h4 class="text-2xl md:text-xl uppercase font-bold md:font-semibold md:w-40">Work With Us</h4>
+            <a href="about.html" class="about-link border-b border-pr-sec text-xl text-pr-sec w-24">About Us</a>
+          </div>
+          <hr class="mt-3 dotted">
+          <div class="feat-link mt-16 md:mt-0 md:ml-12">
+            <p class="font-normal mb-12 text-2xl lg:w-5/6 xl:w-7/12">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+            <a href="#featured" class="text-white border bg-pr-sec rounded-lg bg-transparent text-xl py-4 px-7">Start Your Project</a>
+          </div>
+        </div>
+  
+        <div class="mx-auto mt-32 md:w-full xl:w-10/12">
+          <div class="flex flex-col md:flex-row justify-between w-full h-full">
+            <div class="work-div md:ml-7 cyan-bg"></div>
+            <div class="work-div md:mr-7 cyan-bg mt-20"></div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-pr-milk py-20">
+      <div class="mx-auto w-11/12">
+        <div class="featured flex flex-wrap md:flex-nowrap items-center">
+          <h4 class="text-2xl md:text-xl uppercase font-bold md:font-semibold mr-3 md:mr-8">Testimonials</h4>
+          <hr class="dotted">
+          <p class="md:ml-8 mt-5 md:mt-0 font-normal text-xl md:text-2xl md:w-5/12">Businesses that trust us have these to say</p>
+        </div>
+        <div class="card-slide w-11/12 flex flex-nowrap mt-16 ml-5 md:ml-20 overflow-x-auto">
+          <div class="card w-96 mb-12 flex-shrink-0">
+            <div class="h-52 bg-yellow-400 rounded-t-xl "></div>
+            <div class="bg-white rounded-b-xl py-8 px-5">
+              <p class="text-xl font-light mb-5">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+              <h5 class="text-xl font-normal">CEO Skolweb</h5>
+            </div>
+          </div>
+          <div class="card w-96 mb-12 ml-20 flex-shrink-0">
+            <div class="h-52 bg-yellow-400 rounded-t-xl "></div>
+            <div class="bg-white rounded-b-xl py-8 px-5">
+              <p class="text-xl font-light mb-5">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+              <h5 class="text-xl font-normal">CEO Skolweb</h5>
+            </div>
+          </div>
+          <div class="card w-96 mb-12 ml-20 flex-shrink-0">
+            <div class="h-52 bg-yellow-400 rounded-t-xl "></div>
+            <div class="bg-white rounded-b-xl py-8 px-5">
+              <p class="text-xl font-light mb-5">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+              <h5 class="text-xl font-normal">CEO Skolweb</h5>
+            </div>
+          </div>
+          <div class="card w-96 mb-12 ml-20 flex-shrink-0">
+            <div class="h-52 bg-yellow-400 rounded-t-xl "></div>
+            <div class="bg-white rounded-b-xl py-8 px-5">
+              <p class="text-xl font-light mb-5">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+              <h5 class="text-xl font-normal">CEO Skolweb</h5>
+            </div>
+          </div>
+          <div class="card w-96 mb-12 ml-20 flex-shrink-0">
+            <div class="h-52 bg-yellow-400 rounded-t-xl "></div>
+            <div class="bg-white rounded-b-xl py-8 px-5">
+              <p class="text-xl font-light mb-5">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+              <h5 class="text-xl font-normal">CEO Skolweb</h5>
+            </div>
+          </div>
+          <div class="card w-96 mb-12 ml-20 flex-shrink-0">
+            <div class="h-52 bg-yellow-400 rounded-t-xl "></div>
+            <div class="bg-white rounded-b-xl py-8 px-5">
+              <p class="text-xl font-light mb-5">Leveraging on our capabilities and experience, we are able to offer the best solutions with “world class” in mind.</p>
+              <h5 class="text-xl font-normal">CEO Skolweb</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-pr-gray py-20 w-full">
+      <div class="w-11/12 mx-auto">
+        <div class="featured flex flex-wrap md:flex-nowrap items-center">
+          <h4 class="text-2xl md:text-xl uppercase font-bold md:font-semibold mr-3 md:mr-8">From Our Blog</h4>
+          <hr class="dotted">
+          <p class="md:ml-8 mt-5 md:mt-0 font-normal text-xl md:text-2xl md:w-5/12">Find out what we have been talking about at paritie.</p>
+        </div>
+        <div class="what-cards flex justify-between items-start mt-20 mx-auto w-full">
+          <div class="blog-card bg-white rounded-2xl relative pt-12 w-96">
+            <div class="card-content w-10/12 mx-auto">
+              <h6 class="blog-head text-sm uppercase">Design</h6>
+              <h3 class="font-bold my-10 text-xl text-black">Why you need to identify your target market first.</h3>
+            </div>
+            <div class="flex justify-between items-center ml-8">
+              <a class="text-sm text-pr-sec" href="#">Read More</a>
+              <div class="bg-link h-60 bg-pr-pri w-7/12 rounded-tl-3xl"></div>
+            </div>
+          </div>
+          <div class="blog-card hidden md:block bg-white rounded-2xl relative pt-12 w-96">
+            <div class="card-content w-10/12 mx-auto">
+              <h6 class="blog-head text-sm uppercase">Web Development</h6>
+              <h3 class="font-bold my-10 text-xl text-black">Why you need to identify your target market first.</h3>
+            </div>
+            <div class="flex justify-between items-center ml-8">
+              <a class="text-sm text-pr-sec" href="#">Read More</a>
+              <div class="bg-link h-60 bg-pr-pri w-7/12 rounded-tl-3xl"></div>
+            </div>
+          </div>
+          <div class="blog-card hidden xl:block bg-white rounded-2xl relative pt-12 w-96">
+            <div class="card-content w-10/12 mx-auto">
+              <h6 class="blog-head text-sm uppercase">Mobile Development</h6>
+              <h3 class="font-bold my-10 text-xl text-black">Why you need to identify your target market first.</h3>
+            </div>
+            <div class="flex justify-between items-center ml-8">
+              <a class="text-sm text-pr-sec" href="#">Read More</a>
+              <div class="bg-link h-60 bg-pr-pri w-7/12 rounded-tl-3xl"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="link-arrow relative flex items-center mt-20 mb-10 mx-auto text-pr-pri uppercase w-72">Read more from our blog <img class="ml-3" src="./assets/images/arrow-right-line.png" alt="arrow link to blog"></a>
+      </div>
+    </section>
+    <section class="bg-pr-milk mx-4 mt-4 space-sec py-20 z-10">
+      <hr class="transformed">
+      <div class="cta mx-auto">
+        <h2 class=" text-3xl md:text-5xl font-extrabold text-center text-pr-pri">Have Ideas/Projects and Require able hands to Bring them to life?</h2>
+        <a href="#" class="link-arrow-bg relative flex items-center text-2xl md:text-4xl font-extrabold mt-20 mb-10 mx-auto text-pr-pri w-48 md:w-64">Talk to us<img class="ml-8" src="./assets/images/arrow-right-line-bg.png" alt="arrow link to blog"> </a>
+      </div>
+    </section>
+    <footer id="footer" class="bg-pr-pri md:mx-4 space-sec-foot z-20">
+      <div>
+        <div class="footer-links text-lg justify-between flex flex-wrap  md:flex-row w-5/6 md:w-2/3 mx-auto font-normal py-20 text-white">
+          <ul class="links mt-8 md:mt-0">
+            <li class="text-bold text-2xl mb-6">Links</li>
+            <li class="mt-3">Home</li>
+            <li class="mt-3">Services</li>
+            <li class="mt-3">Projects</li>
+            <li class="mt-3">Innovation Hub</li>
+            <li class="mt-3">Coworking Space</li>
+          </ul>
+          <ul class="socials uppercase mt-8 md:mt-0">
+            <li class="mb-6">facebook</li>
+            <li class="mb-6">instagram</li>
+            <li class="mb-6">twitter</li>
+            <li>behance</li>
+          </ul>
+          <div class="info mt-10">
+            <ul class="font-medium mb-6 text-xl">
+              <li>info@paritie.com</li>
+              <li>(+234)0810642454</li>
+            </ul>
+            <ul class="text-lg">
+              <li>Suite C1, Peniel Albarka Plaza, Opp.</li>
+              <li>Federal Highcourt, Minna.</li>
+              <li>Niger State.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="last-part bg-white w-full h-16">
+        <div class="copy-policy flex flex-col md:flex-row md:items-center h-full w-11/12 md:w-5/6 mx-auto text-pr-pri text-base py-3 items-start justify-between">
+          <p>Privacy Policy</p>
+          <p>Copyright © 2020 Paritie Dynamic Enterprise Limited.</p>
+        </div>
+      </div>
+    </footer>
+  
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

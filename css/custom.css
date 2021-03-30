@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.active {
+  color: #FF4E4E;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FF4E4E;
+}
+
+/* :root {
+  --maskX: 0;
+  --maskY: 50;
+} */
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+.transHeader {
+  -webkit-text-stroke: 1px #272870;
+  
+}
+
+.cloneHeader {
+  clip-path: polygon(0 0, 30% 0, 50% 100%, 0 100%); 
+}
+
+.shapes {
+  top: 130px;
+  height: 750px;
+}
+
+.shape1 {
+  margin-right: 334px;
+  width: 315px;
+  height: 367px;
+  box-shadow: 20px 23px 36px 0px rgba(129,76,48,0.16);
+}
+.shape2 {
+  width: 302px;
+  height: 172px;
+  box-shadow: 20px 23px 36px 0px rgba(129,76,48,0.16);
+}
+.shape3 {
+  width: 144px;
+  height: 367px;
+  box-shadow: 20px 23px 36px 0px rgba(129,76,48,0.16);
+}
+.shape4 {
+  width: 315px;
+  height: 367px;
+  top: 197px;
+}
+.shape5 {
+  top:421px;
+  width: 406px;
+  height: 105px;
+  box-shadow: 20px 23px 36px 0px rgba(129,76,48,0.16);
+}
+
+.dotted {
+  border: none;
+  border-top: 1px dotted #000;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 300px;
+}
+
+.transformed {
+  border: none;
+  border-left: 1px solid #272870;
+  color: #fff;
+  background-color: #fff;
+  height: 150px;
+  width: 1px;
+  margin: 0 auto;
+  transform: translateY(-150px);
+}
+
+.link-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 98%;
+  margin-left: -8px;;
+  height: 1px;
+  background-color: #272870;
+}
+
+.link-arrow-bg::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 94%;
+  height: 2px;
+  background-color: #272870;
+}
+
+
+.card1 {
+  background-color: #FFD8BF;
+}
+
+.card-circle2 {
+  background-color: #D5D5FF;
+}
+
+.card-circle1 {
+  background-color: #FFC49E;
+}
+
+.big-num {
+  font-size: 180px;
+  font-family: 'Gordita';
+}
+
+.num-1 {
+  top: -4.2rem;
+}
+
+.num-2 {
+  top: -48px;
+  right: -3.8rem;
+}
+
+.num-3 {
+  opacity: 0.21;
+  top: -48px;
+  right: -58px;
+}
+
+.cyan-bg {
+  background-color: #FFECE2;
+}
+
+.work-div {
+  width: 472px;
+  height: 477px;
+  border-radius: 20px;
+}
+
+.card-slide {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-slide::-webkit-scrollbar {
+  width: 1em;
+}
+
+.card-slide::-webkit-scrollbar-track {
+  background: rgba(246, 167, 164, 1);
+}
+.card-slide::-webkit-scrollbar-track:end {
+  background: transparent;
+  margin-right: 30px;
+}
+
+.card-slide::-webkit-scrollbar-thumb {
+background-color: rgba(255, 78, 78, 1);
+outline: 1px solid rgba(255, 78, 78, 1);
+}
+
+.card {
+  box-shadow: 20px 23px 36px 0px rgba(141,65,25,0.09);
+}
+
+.blog-card {
+  box-shadow: 0px 32px 48px 0px rgba(0,0,0,0.07);
+}
+
+.blog-head {
+  color: #6B6B6B;
+}
+
+.space-sec,
+.space-sec-foot {
+  width: calc(100% - 32px);
+}
+
+.card-type {
+  box-shadow: 0px 22px 16px 0px rgba(0,0,0,0.05);
+}
+
+.cta {
+  width: 582px;
+}
+
+.body-section {
+  height: auto;
+  position: relative;
+}
+
+.body-section .orbit {
+  width: 90vw;
+  height: 90vw;
+  /* margin-left: 5vw; */
+  position: fixed;
+  border: 3px dotted rgba(195, 195, 195, 0.2);
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 0;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.body-section .orbit.orbit1 {
+  top: -125px;
+}
+
+.body-section .orbit.orbit2 {
+  width: 70vw;
+  height: 70vw;
+  top: 141px;
+}
+
+.body-section .orbit.orbit3 {
+  width: 40vw;
+  height: 40vw;
+  top: 356px;
+}
+
+.body-section .orbit .planet {
+  margin-top: -7px;
+  margin-left: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.planet-parent {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.body-section .orbit .planet.green-planet {
+  background-color: #84F1C7;
+  transform: translate(611px, 210px);
+}
+
+.body-section .orbit .planet.blue-planet {
+  background-color: #3D3EAF;
+  transform: translate(-335px, 373px);
+}
+
+.body-section .orbit .planet.red-planet {
+  background-color: #E3435C;
+  transform: translateX(20vw);
+}
+
+.green-clip {
+  width: 80px;
+  height: 50px;
+  background-color: #33CCCD;
+  transform: rotate(30deg);
+  position: fixed;
+  top: 55vh;
+  left: -40px;
+}
+
+.red-clip {
+  width: 30px;
+  height: 30px;
+  transform: rotate(30deg);
+  position: fixed;
+  top: 40vh;
+  left: 50vw;
+}
+
+@media screen and (max-width: 1350px) {
+  .work-div {
+    width: 420px;
+    height: 419px;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .body-section .orbit.orbit3 {
+    top: 327px;
+  }
+  .body-section .orbit.orbit2 {
+    top: 125px;
+  }
+  .body-section .orbit .planet.blue-planet {
+    transform: translate(-312px, 347px);
+  }
+  .body-section .orbit .planet.green-planet {
+    transform: translate(567px, 176px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .work-div {
+    width: 357px;
+    height: 405px;
+  }
+  .body-section .orbit .planet.green-planet {
+    transform: translate(536px, 210px);
+  }
+
+  .body-section .orbit .planet.blue-planet {
+    transform: translate(-276px, 354px);
+  }
+
+  .body-section .orbit .planet.red-planet {
+    transform: translate(174px, -182px);
+  }
+  .body-section .orbit.orbit2 {
+    top: 121px;
+  }
+  .body-section .orbit.orbit3 {
+    top: 321px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .body-section .orbit .planet.red-planet {
+      transform: translate(157px, -177px);
+  }
+  .body-section .orbit.orbit3 {
+    top: 289px;
+  }
+  .body-section .orbit .planet.blue-planet {
+    transform: translate(-258px, 329px);
+  }
+  .body-section .orbit .planet.green-planet {
+    transform: translate(506px, 188px);
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .body-section .orbit .planet.red-planet {
+      transform: translate(143px, -175px);
+  }
+  .body-section .orbit.orbit3 {
+    top: 282px;
+  }
+  .body-section .orbit .planet.blue-planet {
+    transform: translate(-248px, 305px);
+  }
+  .body-section .orbit.orbit2 {
+    top: 107px;
+  }
+  .body-section .orbit .planet.green-planet {
+    transform: translate(481px, 157px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body-section .orbit .planet.red-planet {
+      transform: translate(125px, -159px);
+  }
+  .body-section .orbit.orbit3 {
+    top: 257px;
+  }
+  .body-section .orbit .planet.blue-planet {
+    transform: translate(-214px, 285px);
+  }
+  .body-section .orbit.orbit2 {
+    top: 94px;
+  }
+  .body-section .orbit .planet.green-planet {
+    transform: translate(433px, 147px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .dotted {
+    width: 157px;
+  }
+  .work-div {
+    width: 100%;
+    height: 405px;
+  }
+  .cta {
+    width: 100%;
+  }
+  .space-sec-foot {
+    width: 100%;
+  }
+}
+
